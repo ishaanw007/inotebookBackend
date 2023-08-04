@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "c9ecf369-9ae3-4847-8958-53ab729dc83f",
+		"name": "crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "15798681-c9ecf369-9ae3-4847-8958-53ab729dc83f"
+	},
+	"item": [
+		{
+			"name": "get",
+			"id": "bb34235e-702a-4449-95a9-95592e7c329f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZDRkM2I2ZDI4OTM5ZTllNmFjNjczIn0sImlhdCI6MTY5MTE3NjQ0NH0.gQ7PlqNhBvMx6KDNYbAKFD7XOdktIKTJrYqMt6AWLzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/notes/fetch",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"notes",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"id": "577ebed3-b391-457f-ab4a-15d793836bca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZDRkM2I2ZDI4OTM5ZTllNmFjNjczIn0sImlhdCI6MTY5MTE3NjQ0NH0.gQ7PlqNhBvMx6KDNYbAKFD7XOdktIKTJrYqMt6AWLzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"i want to join raftlabs very soon\",\r\n    \"info\":\"i am a fast learner and want to develop my skills i think i am a good candidate\",\r\n    \"tag\":\"full stack developer\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/notes/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"notes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"id": "21f4e04b-f4a4-44ae-842a-da6c93595884",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZDRkM2I2ZDI4OTM5ZTllNmFjNjczIn0sImlhdCI6MTY5MTE3NjQ0NH0.gQ7PlqNhBvMx6KDNYbAKFD7XOdktIKTJrYqMt6AWLzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"i will give my 100% to all the tasks\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/notes/update/64cd51e4a34368d9a0f6be44",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"notes",
+						"update",
+						"64cd51e4a34368d9a0f6be44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"id": "e495a37a-0dac-4b5f-9bc7-5c3515b8bbb4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRjZDRkM2I2ZDI4OTM5ZTllNmFjNjczIn0sImlhdCI6MTY5MTE3NjQ0NH0.gQ7PlqNhBvMx6KDNYbAKFD7XOdktIKTJrYqMt6AWLzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/notes/delete/64cd51e4a34368d9a0f6be44",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"notes",
+						"delete",
+						"64cd51e4a34368d9a0f6be44"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
