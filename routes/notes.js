@@ -86,7 +86,7 @@ router.delete("/delete/:id", fetchuser, async (req, res) => {
   }
 
   note = await Notes.findByIdAndDelete(req.params.id);
-  res.json("deleted");
+  res.json(note);
 });
 
 module.exports = router;
